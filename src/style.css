@@ -1,32 +1,47 @@
+/* Body with soft gradient background */
 body {
   font-family: Arial, sans-serif;
+  background: linear-gradient(120deg, #d4fc79, #96e6a1);
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-button {
-  margin: 5px;
-  padding: 10px;
-  background-color: #4caf50;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #45a049;
-}
-
+/* Center the title */
 h1 {
   text-align: center;
+  margin-top: 0;
+  margin-bottom: 20px;
 }
 
+/* Space out the UI section and the graph container */
+.ui-controls {
+  margin-bottom: 20px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  width: 600px;
+}
+
+/* Graph container */
 .graph-container {
-  border: 2px solid black;  /* Adds a black border around the graph */
-  margin: 20px;
-  padding: 10px;  /* Adds some space between the graph and the border */
-  display: flex;
-  justify-content: center;  /* Center the SVG graph horizontally */
-  align-items: center;  /* Center the SVG graph vertically */
-  width: calc(100vw - 40px);  /* Full window width minus padding */
-  height: calc(100vh - 120px); /* Full window height minus space for controls */
+  border: 2px solid black;
+  width: 600px;
+  height: 600px;
+  position: relative;
+  overflow: hidden;
+  background-color: #f0f0f0;
+}
+
+/* SVG full size */
+svg {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
