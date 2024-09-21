@@ -28,7 +28,7 @@ git clone https://github.com/your-username/react-graph-network.git
 
 2. Navigate to the project directory:
 ```
-cd react-graph-network
+cd graph-network
 ```
 
 3. Install dependencies:
